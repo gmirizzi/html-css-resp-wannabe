@@ -73,8 +73,14 @@ img {
 }
 
 @media screen and (max-width: 420px) {
-  #lezioni {
-    background-color: #f2f2cdff;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: white;
   }
   
   #lezioni .row>.left,
@@ -85,6 +91,38 @@ img {
 
   .row {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: .7rem;
+  }
+  
+  .container.grey {
+    background-color: transparent;
+  }
+  
+  #lezioni, #why {
+    background-color: #f2f2cdff;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    float: none;
+    width: 100%;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 0px;
+  }
+
+  #why .row img {
+    padding: 20px;
+  }
+
+  img {
+    height: 100px;
+    margin-top: 1em;
   }
 }
